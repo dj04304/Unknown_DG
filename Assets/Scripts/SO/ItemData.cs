@@ -16,6 +16,7 @@ public class ItemData : ScriptableObject
     [Header("Info")]
     public string itemName;
     public string description;
+    public int status;
     public ItemType itemType;
     public Sprite icon;
     public GameObject prefab;

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b05be5b807b8475499831d0c3580f7da, type: 3}
-  m_Name: Arrow_ItemData
+  m_Name: BattleguradH_ItemData
   m_EditorClassIdentifier: 
-  itemName: "\uD654\uC0B4"
-  description: "\uB0A0\uCE74\uB85C\uC6B4 \uD654\uC0B4\uC774\uB2E4."
-  status: 3
-  itemType: 0
-  icon: {fileID: 21300000, guid: 7c00ea4006710ea4994e82ed1d0387ac, type: 3}
-  prefab: {fileID: 609177567460400479, guid: 1d3f1bd7a528e244d91953282e6896f5, type: 3}
+  itemName: "\uAC00\uB4DC \uD5EC\uB984"
+  description: "\uC4F8\uB9CC\uD55C \uD22C\uAD6C\uC774\uB2E4."
+  status: 5
+  itemType: 2
+  icon: {fileID: 21300000, guid: b53db54545fcd5747b7ba5e450c07baf, type: 3}
+  prefab: {fileID: 1710200213430506951, guid: 799145bdeea1efe46a466d35f559a2e1, type: 3}

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b05be5b807b8475499831d0c3580f7da, type: 3}
-  m_Name: Arrow_ItemData
+  m_Name: BandArmor_ItemData
   m_EditorClassIdentifier: 
-  itemName: "\uD654\uC0B4"
-  description: "\uB0A0\uCE74\uB85C\uC6B4 \uD654\uC0B4\uC774\uB2E4."
-  status: 3
-  itemType: 0
-  icon: {fileID: 21300000, guid: 7c00ea4006710ea4994e82ed1d0387ac, type: 3}
-  prefab: {fileID: 609177567460400479, guid: 1d3f1bd7a528e244d91953282e6896f5, type: 3}
+  itemName: "\uBC34\uB4DC \uC544\uBA38"
+  description: "\uB2E8\uB2E8\uD55C \uC544\uBA38\uC774\uB2E4."
+  status: 5
+  itemType: 1
+  icon: {fileID: 21300000, guid: d7236dfb0d0b195439305df676f2425b, type: 3}
+  prefab: {fileID: 4070809619163977790, guid: c50052852df8c604b98c5c97cd60cf3b, type: 3}

@@ -13,7 +13,7 @@ public class InventoryController : MonoBehaviour
     {
         inventories = GetComponentsInChildren<Image>();
 
-        Debug.Log(inventories.Length);
+        //Debug.Log(inventories.Length);
     }
 
     private void Start()
