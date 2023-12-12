@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public GameObject status;
+    public GameObject target;
     public GameObject buttons;
 
-    public void OnStatus()
+    public void OnTarget()
     {
-        status.SetActive(true);
+        target.SetActive(true);
         buttons.SetActive(false);
     }
 
-    public void CloseStatus()
+    public void CloseTarget()
     {
-        status.SetActive(false);
+        target.SetActive(false);
         buttons.SetActive(true);
     }
 
