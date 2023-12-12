@@ -17,6 +17,7 @@ public class ItemData : ScriptableObject
     public string itemName;
     public string description;
     public int status;
+    public bool isEquiped;
     public ItemType itemType;
     public Sprite icon;
     public GameObject prefab;

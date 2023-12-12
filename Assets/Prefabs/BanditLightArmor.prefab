@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 6476516771209120039}
   - component: {fileID: 5900235031464848900}
   - component: {fileID: 8082785321383194158}
+  - component: {fileID: 1804520506179918808}
   m_Layer: 5
   m_Name: BanditLightArmor
   m_TagString: Untagged
@@ -154,6 +155,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1804520506179918808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4070809619163977790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df53bc39d212044d858bfbe0b03b786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1344183804417368723}
 --- !u!1 &7190764189463867128
 GameObject:
   m_ObjectHideFlags: 0

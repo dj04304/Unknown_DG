@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: "\uAC00\uB4DC \uD5EC\uB984"
   description: "\uC4F8\uB9CC\uD55C \uD22C\uAD6C\uC774\uB2E4."
   status: 5
+  isEquiped: 0
   itemType: 2
   icon: {fileID: 21300000, guid: b53db54545fcd5747b7ba5e450c07baf, type: 3}
   prefab: {fileID: 1710200213430506951, guid: 799145bdeea1efe46a466d35f559a2e1, type: 3}

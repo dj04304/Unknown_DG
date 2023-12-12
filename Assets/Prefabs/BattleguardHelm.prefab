@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 147419823288488869}
   - component: {fileID: 5933117131682309246}
   - component: {fileID: 8853451458374786008}
+  - component: {fileID: 1535208116887269752}
   m_Layer: 5
   m_Name: BattleguardHelm
   m_TagString: Untagged
@@ -212,6 +213,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1535208116887269752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710200213430506951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df53bc39d212044d858bfbe0b03b786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 8506372344993217644}
 --- !u!1 &8506372344993217644
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6192748241231800392
 RectTransform:
   m_ObjectHideFlags: 0

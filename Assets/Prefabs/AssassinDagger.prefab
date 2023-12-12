@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 3491534132318080578}
   - component: {fileID: 3946838499821206384}
   - component: {fileID: 6057860365906980951}
+  - component: {fileID: 904377069422845589}
   m_Layer: 5
   m_Name: AssassinDagger
   m_TagString: Untagged
@@ -289,3 +290,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &904377069422845589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021433194827834806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df53bc39d212044d858bfbe0b03b786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 6294091244077779228}

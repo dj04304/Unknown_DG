@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 4985489265869378722}
   - component: {fileID: 1266872229414857852}
   - component: {fileID: 8309310025637407519}
+  - component: {fileID: 7529088041788726833}
   m_Layer: 5
   m_Name: BronzeDagger
   m_TagString: Untagged
@@ -154,6 +155,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7529088041788726833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5923833976517795331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df53bc39d212044d858bfbe0b03b786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 3733305337232595772}
 --- !u!1 &7751273849578492927
 GameObject:
   m_ObjectHideFlags: 0
