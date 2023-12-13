@@ -30,7 +30,7 @@ public class PlayerJsonLoad : MonoBehaviour
         string fileName = "JSON/playerData_" + timeStamp + ".json";
 
         // JSON형태로 포맷팅
-        string jsonData = JsonUtility.ToJson(dataToSave);
+        string jsonData = JsonUtility.ToJson(dataToSave, true);
         
         // 경로 저장
         string path = Path.Combine(Application.dataPath, fileName);

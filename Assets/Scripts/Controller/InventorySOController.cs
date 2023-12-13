@@ -33,6 +33,7 @@ public class InventorySOController : MonoBehaviour
 
             for (int i = 0; i < minCount; i++)
             {
+
                 Image image = itemImages[i];
                 Button imageBtn = image.GetComponent<Button>();
                 ItemData itemData = itemDataList[i];
