@@ -14,6 +14,7 @@ public enum ItemType
 public class ItemData : ScriptableObject
 {
     [Header("Info")]
+    public int item_id;
     public string itemName;
     public string description;
     public int status;

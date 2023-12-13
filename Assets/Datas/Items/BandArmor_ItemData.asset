@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b05be5b807b8475499831d0c3580f7da, type: 3}
   m_Name: BandArmor_ItemData
   m_EditorClassIdentifier: 
+  item_id: 3
   itemName: "\uBC34\uB4DC \uC544\uBA38"
   description: "\uB2E8\uB2E8\uD55C \uC544\uBA38\uC774\uB2E4."
   status: 5

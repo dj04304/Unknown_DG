@@ -8992,7 +8992,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1629266844}
-  - component: {fileID: 1629266845}
   - component: {fileID: 1629266846}
   m_Layer: 5
   m_Name: InvenBox
@@ -9041,40 +9040,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 412}
   m_SizeDelta: {x: 0, y: -1224}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1629266845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629266843}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc021cc5d7e27114aa2257d56dd616ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  equipPopup: {fileID: 3676900302680729066}
-  inventories:
-  - {fileID: 2122216813}
-  - {fileID: 2106657478}
-  - {fileID: 1232716067}
-  - {fileID: 1956473869}
-  - {fileID: 1674318851}
-  - {fileID: 1630191318}
-  - {fileID: 1187996357}
-  - {fileID: 378546899}
-  - {fileID: 687166004}
-  - {fileID: 24434394}
-  - {fileID: 1264807303}
-  - {fileID: 1370357469}
-  - {fileID: 1925938298}
-  - {fileID: 1982308192}
-  - {fileID: 1899855144}
-  - {fileID: 1640513957}
-  - {fileID: 756583322}
-  - {fileID: 1437818675}
-  - {fileID: 1259240935}
-  - {fileID: 2140555012}
 --- !u!114 &1629266846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9092,12 +9057,13 @@ MonoBehaviour:
   popupItemName: {fileID: 269811735725331647}
   popupItemDescription: {fileID: 3346629881501439782}
   popupItemStatus: {fileID: 195557924}
+  popupImage: {fileID: 7267810200207251014}
   itemDataList:
-  - {fileID: 11400000, guid: 57d5bf6beeced27458d75e0b36c8358a, type: 2}
   - {fileID: 11400000, guid: 9de3bf155014af14abb585c354a20a5d, type: 2}
+  - {fileID: 11400000, guid: 57d5bf6beeced27458d75e0b36c8358a, type: 2}
+  - {fileID: 11400000, guid: 14b87781e0a39064f8f5329ee452e379, type: 2}
   - {fileID: 11400000, guid: b04bc795e5782a547ba5e815c8fbc4cb, type: 2}
   - {fileID: 11400000, guid: c04bf72a3677e3b4ea6150b09ea227f4, type: 2}
-  - {fileID: 11400000, guid: 14b87781e0a39064f8f5329ee452e379, type: 2}
   - {fileID: 11400000, guid: 217f0d76cd4b6d8468e2e65340273595, type: 2}
   itemImages:
   - {fileID: 2122216813}

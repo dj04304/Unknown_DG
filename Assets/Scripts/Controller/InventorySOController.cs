@@ -14,12 +14,13 @@ public class InventorySOController : MonoBehaviour
     public TextMeshProUGUI popupItemName;
     public TextMeshProUGUI popupItemDescription;
     public TextMeshProUGUI popupItemStatus;
+    public Image popupImage;
+    public TextMeshProUGUI popupdItemType;
 
     [SerializeField] private List<ItemData> itemDataList;
     public List<Image> itemImages;
 
     private Dictionary<Image, ItemData> imageToItemMap = new Dictionary<Image, ItemData>(); // Dictionary를 이용해서 Image를 Key값으로 ItemData를 가져온다.
- 
 
 
     private void Start()
@@ -38,9 +39,18 @@ public class InventorySOController : MonoBehaviour
                 imageToItemMap.Add(image, itemData);
 
                 //Debug.Log("image " + image);
-                //Debug.Log("itemData " + itemData);
+                Debug.Log("itemData " + itemData.isEquiped);
 
                 SetItemData(image, itemData); // 아이템을 Set해주는 동작
+
+                if (itemData.isEquiped)
+                {
+                    InventoryItem invenItem = GetComponentsInChildren<InventoryItem>()[itemData.item_id];
+                    Debug.Log("itemData " + invenItem);
+
+                    invenItem.SetEquipItem(itemData.isEquiped);
+                }
+
                 imageBtn.onClick.AddListener(() => OnImageClick(image));
                
             }
@@ -54,12 +64,14 @@ public class InventorySOController : MonoBehaviour
         {
             ItemData selectedItem = imageToItemMap[itemImage];
 
-            Debug.Log("item : " + selectedItem);
+            //Debug.Log("item : " + selectedItem);
             //InventoryItem invenItem = GetComponentInChildren<InventoryItem>();
             //InventoryItem invenItem = selectedItem.prefab.GetComponentInChildren<InventoryItem>();
 
-            InventoryItem invenItem = GetComponentInChildren<InventoryItem>();
+            InventoryItem invenItem = GetComponentsInChildren<InventoryItem>()[selectedItem.item_id];
 
+
+            //Debug.Log("숫자가 몇임?" + selectedItem.item_id);
             Debug.Log("invenItem: " + invenItem);
 
             equipPopupBtn.SendItemData(selectedItem, invenItem); // 컴포넌트 넘겨주는것이 그렇게 좋지는 않다.
@@ -68,7 +80,16 @@ public class InventorySOController : MonoBehaviour
             popupItemName.text = selectedItem.itemName;
             popupItemDescription.text = selectedItem.description;
             popupItemStatus.text = selectedItem.status.ToString();
+            popupImage.sprite = selectedItem.icon;
 
+            if (selectedItem.itemType == ItemType.Weapon)
+            {
+                popupdItemType.text = "공격력: ";
+            }
+            else
+            {
+                popupdItemType.text = "방어력: ";
+            }
 
         }
     }

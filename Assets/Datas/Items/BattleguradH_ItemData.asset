@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b05be5b807b8475499831d0c3580f7da, type: 3}
   m_Name: BattleguradH_ItemData
   m_EditorClassIdentifier: 
+  item_id: 4
   itemName: "\uAC00\uB4DC \uD5EC\uB984"
   description: "\uC4F8\uB9CC\uD55C \uD22C\uAD6C\uC774\uB2E4."
   status: 5

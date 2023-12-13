@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b05be5b807b8475499831d0c3580f7da, type: 3}
   m_Name: AssasinD_ItemData
   m_EditorClassIdentifier: 
+  item_id: 2
   itemName: "\uC5B4\uC314\uC2E0 \uB300\uAC70"
   description: "\uB0A0\uCE74\uB85C\uC6B4 \uCE7C\uC774\uB2E4."
   status: 7
+  isEquiped: 0
   itemType: 0
   icon: {fileID: 21300000, guid: 1ff1175d56df9eb4f8cfa0ba429d9254, type: 3}
   prefab: {fileID: 7021433194827834806, guid: 4429f8733f9a2e4418b622f7131a9b54, type: 3}
