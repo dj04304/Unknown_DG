@@ -9,6 +9,8 @@ public class EquipPopupBtn : MonoBehaviour
 {
     private ItemData itemData;
     public GameObject equipPopup;
+
+    public StatusController statusController;
     private InventoryItem equipItem;
 
     // 전달받은 아이템 정보
@@ -23,19 +25,19 @@ public class EquipPopupBtn : MonoBehaviour
 
     public void OnConfirmBtnClicked()
     {
-        Debug.Log("111111111111111?: " + itemData);
+        //Debug.Log("111111111111111?: " + itemData);
 
        if (itemData.isEquiped)
         {
             itemData.isEquiped = false;
+            statusController.UpdateStatus(itemData);
         }
        else if(!itemData.isEquiped)
         {
             itemData.isEquiped = true;
+            statusController.UpdateStatus(itemData);
         }
        
-
-
         SetEquipedImage();
 
         equipPopup.SetActive(false);

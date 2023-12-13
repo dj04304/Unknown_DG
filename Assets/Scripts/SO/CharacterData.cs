@@ -8,16 +8,21 @@ using UnityEngine;
 public class CharacterData : ScriptableObject
 {
     [Header("info")]
-    [SerializeField] private string playerName;
-    [SerializeField] private string charName;
-    [SerializeField] private int level;
-    [SerializeField] private int exp;
+    public string playerName;
+
+    [SerializeField] private string _charName;
+    public string charName
+    {
+        get { return _charName; }
+    }
+
+    public int level;
+    public int exp;
 
     [Header("Status")]
-    [SerializeField] private float maxHealth;
-    [SerializeField] private float power;
-    [SerializeField] private float armor;
-    [SerializeField] private float critical;
-
+    public float maxHealth;
+    public float power;
+    public float armor;
+    public float critical;
 
 }

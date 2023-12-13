@@ -3637,6 +3637,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 731842688}
+  - component: {fileID: 731842689}
+  - component: {fileID: 731842690}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3660,6 +3662,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731842689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731842687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6141a38ccf8f8846b7d5e8f5ba0d502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterData: {fileID: 1796059020}
+--- !u!114 &731842690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731842687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1a2b01be3c40e49b78d9de10b2bdf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 2eb63201fbc23b344a8655876a7770d8, type: 2}
+  character: {fileID: 731842689}
 --- !u!1 &735517299
 GameObject:
   m_ObjectHideFlags: 0
@@ -7996,6 +8025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504951495}
+  - component: {fileID: 1504951496}
   m_Layer: 5
   m_Name: StatusInfo
   m_TagString: Untagged
@@ -8024,6 +8054,23 @@ RectTransform:
   m_AnchoredPosition: {x: -350, y: 30}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1504951496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504951494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb98a3eb3e18414f8285d93a13d70f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPower: {fileID: 498988396}
+  characterArmor: {fileID: 330787378}
+  characterMaxHealth: {fileID: 696092068}
+  characterCritical: {fileID: 1601045753}
+  character: {fileID: 731842689}
 --- !u!1 &1523451334
 GameObject:
   m_ObjectHideFlags: 0
@@ -9058,6 +9105,7 @@ MonoBehaviour:
   popupItemDescription: {fileID: 3346629881501439782}
   popupItemStatus: {fileID: 195557924}
   popupImage: {fileID: 7267810200207251014}
+  popupdItemType: {fileID: 1463805390}
   itemDataList:
   - {fileID: 11400000, guid: 9de3bf155014af14abb585c354a20a5d, type: 2}
   - {fileID: 11400000, guid: 57d5bf6beeced27458d75e0b36c8358a, type: 2}
@@ -10121,6 +10169,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754375851}
   m_CullTransparentMesh: 1
+--- !u!114 &1796059020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a33022517675e429ea96676680e238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: "\uBC15\uB18D\uBD80"
+  _charName: 
+  level: 5
+  exp: 50
+  maxHealth: 400
+  power: 20
+  armor: 10
+  critical: 5
 --- !u!1 &1807247921
 GameObject:
   m_ObjectHideFlags: 0
@@ -13492,6 +13560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipPopup: {fileID: 3676900302680729066}
+  statusController: {fileID: 1504951496}
 --- !u!222 &4774241236467891293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13726,6 +13795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipPopup: {fileID: 3676900302680729066}
+  statusController: {fileID: 1504951496}
 --- !u!1 &6931920030462069551
 GameObject:
   m_ObjectHideFlags: 0
