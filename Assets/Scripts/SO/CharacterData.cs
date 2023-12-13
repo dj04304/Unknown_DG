@@ -16,6 +16,9 @@ public class CharacterData : ScriptableObject
         get { return _charName; }
     }
 
+    public string occupation;
+    public string description;
+
     public int level;
     public int exp;
 
