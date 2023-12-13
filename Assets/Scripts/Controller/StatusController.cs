@@ -20,7 +20,7 @@ public class StatusController : MonoBehaviour
         BaseStatus();
     }
 
-
+    // 초기 스테이터스, 만약 기존에 장비하고 있다면 수치를 더해줌
     private void BaseStatus()
     {
         float curEquipPower = character.CharacterData.power;
@@ -52,6 +52,7 @@ public class StatusController : MonoBehaviour
 
     }
 
+    // 장비를 장착한 후 변화되는 스탯
     public void UpdateStatus(ItemData itemData)
     {
         if(itemData != null)
@@ -87,6 +88,7 @@ public class StatusController : MonoBehaviour
 
     }
 
+    // 저장시에 업데이트해줄 스탯
     private void UpdateCharacterDataFromUI()
     {
         character.CharacterData.power = float.Parse(characterPower.text);
