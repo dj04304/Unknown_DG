@@ -9,12 +9,19 @@ using UnityEngine.Rendering.VirtualTexturing;
 /// </summary>
 public class PlayerJsonLoad : MonoBehaviour
 {
+    public static PlayerJsonLoad Instance;
+
     public CharacterData characterData;
     // 이 위치에 Load
     public Character character;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     [ContextMenu("To Json Data")]
-    void SavePlayerDataToJson()
+    public void SavePlayerDataToJson(CharacterData dataToSave)
     {
         // 타임스탬프로 파일 구분해줌
         string timeStamp = System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
@@ -23,7 +30,7 @@ public class PlayerJsonLoad : MonoBehaviour
         string fileName = "JSON/playerData_" + timeStamp + ".json";
 
         // JSON형태로 포맷팅
-        string jsonData = JsonUtility.ToJson(characterData);
+        string jsonData = JsonUtility.ToJson(dataToSave);
         
         // 경로 저장
         string path = Path.Combine(Application.dataPath, fileName);
